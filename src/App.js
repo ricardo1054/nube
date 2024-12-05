@@ -1,25 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
-
+ 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+      <h1>Mi Video en Streaming</h1>
+      <video
+        width="80%"
+        controls
+        style={{ maxWidth: '800px', borderRadius: '10px' }}
+      >
+        <source src="/videoprueba.mp4" type="video/mp4" />
+        Tu navegador no soporta el elemento de video.
+      </video>
     </div>
+ 
   );
 }
-
+ 
 export default App;
